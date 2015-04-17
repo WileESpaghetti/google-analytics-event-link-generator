@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Google Analytics Event Link Generator",
+  "version": "0.0.2",
+  "description": "Generates an html link tag that supports an event tracking in Google Analytics",
+  "update_url": "http://www.developforfun.com/chrome-extensions/updateInfo.xml",
+  "icons": {
+  	"16": "ga-icon-16.png",
+  	"32": "ga-icon-32.png",
+  	"48": "ga-icon-48.png"
+  },
+  "browser_action": {
+    "default_icon": "ga-icon-32.png",
+    "default_popup": "index.html",
+    "default_title": "Generate Event Tracking Link"
+  },
+  "permissions": [
+    "tabs",
+    "clipboardWrite"
+  ],
+  "background": {
+    "scripts": ["index.js"]
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generate Event Tracking Link</title>
+	<style>
+		input
+		{
+			margin-bottom: 1em;
+		}
+
+		.hidden
+		{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+<form name="ga-link-data" id="ga-link-data">
+	<label>
+		Url to track:
+		<input type="text" name="event-url" id="event-url">
+	</label>
+	<label>
+		Link Text:
+		<input type="text" name="event-content" id="event-content">
+	</label>
+	<label>
+		Category:
+		<input type="text" name="event-category" id="event-category">
+	</label>
+	<label>
+		Event Name (Action):
+		<input type="text" name="event-action" id="event-action">
+	</label>
+	<label>
+		Event Description:
+		<input type="text" name="event-label" id="event-label">
+	</label>
+</form>
+
+<button name="generate" id="generate">Generate</button>
+
+<script src="index.js"></script>
+
+<div id="event-results" class="hidden">
+	<input type="text" name="event-link-text" id="event-link-text">
+	<button id="event-copy">Copy</button>
+</div>
+
+</body>
+</html>
